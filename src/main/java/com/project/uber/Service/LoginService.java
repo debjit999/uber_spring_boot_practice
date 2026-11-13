@@ -1,6 +1,6 @@
 package com.project.uber.Service;
-
 import com.project.uber.Dto.LoginRequest;
+import com.project.uber.Dto.SignUpDto;
 import com.project.uber.Entity.LoginUser;
 import com.project.uber.Repository.LoginUserRepository;
 import lombok.RequiredArgsConstructor;
@@ -33,5 +33,9 @@ public class LoginService {
 
         // 4. Success
         return "Login successful. Welcome " + user.getFirstName() + "!";
+    }
+    public String SignUp(SignUpDto signUpDto) {
+
+        return "Sign-up successful!";
     }
 }

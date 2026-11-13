@@ -12,3 +12,4 @@ public interface LoginUserRepository extends JpaRepository<LoginUser, Integer> {
     // Spring automatically generates: SELECT * FROM login_user WHERE email = ? AND is_active = 1 AND is_deleted = 0
     Optional<LoginUser> findByEmailAndIsActiveTrueAndIsDeletedFalse(String email);
 }
+
