@@ -28,7 +28,7 @@ public class LoginService {
 
         // 3. Check password (Note: In production, use BCrypt password encoder here!)
         if (!user.getPassword().equals(request.getPassword())) {
-            return "Invalid email or password";
+            return "Invalid email or passwordD";
         }
 
         // 4. Success
