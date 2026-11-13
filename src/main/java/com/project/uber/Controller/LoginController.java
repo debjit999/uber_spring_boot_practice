@@ -38,7 +38,7 @@ public class LoginController {
         String resultMessage = loginService.SignUp(SignUpDto);
 
         // Check if the service returned a success message or an error
-        if (resultMessage.startsWith("Invalid")) {
+        if (resultMessage.startsWith("InvalidD")) {
             return ResponseEntity.status(401).body(resultMessage);
         }
 
